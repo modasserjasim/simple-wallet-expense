@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/wallet-expense-fav.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard - Wallet Expense</title>
+</head>
+<body>
+    <section class="bg-white dark:bg-gray-900 h-full md:h-screen">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 h-full">
+            <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+                <img class="mx-auto" src="images/wallet-expense-white.png" alt="Logo">
+                <h3 class="mb-4 mt-4 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">Calculate your daily expenses</h3>
+            </div>
+            <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                <!-- Pricing Card -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white w-full">
+                    <h3 class="mb-4 text-2xl font-semibold">Deposit</h3>
+                
+                    <div class="flex justify-center my-8">
+                        <p class="mr-2 text-5xl font-extrabold">$<span id="deposit-amount">29</span></p>
+                    </div>
+                </div>
+                <!-- Pricing Card -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white w-full">
+                    <h3 class="mb-4 text-2xl font-semibold">Withdraw</h3>
+                    <div class="flex justify-center items-baseline my-8">
+                        <p class="mr-2 text-5xl font-extrabold">$<span id="withdraw-amount">00</span></p>
+                    </div>
+                </div>
+                <!-- Pricing Card -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white w-full">
+                    <h3 class="mb-4 text-2xl font-semibold">Balance</h3>
+                    <div class="flex justify-center items-baseline my-8">
+                        <p class="mr-2 text-5xl font-extrabold">$<span id="balance-amount">500</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom input fields with two boxes  -->
+            <div class="grid grid-cols-2 gap-10 mt-10">
+                <div class="bg-white w-full p-10 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">Deposit Your Money</h3>
+                    <div>
+                        <input id="deposit-field"
+                          type="number"
+                          class="form-control block w-full px-3 py-3 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                          id="exampleFormControlInput1"
+                          placeholder="Deposit Amount. Ex: 500"
+                        />
+                    </div>
+                    <div class="text-center pt-1 mt-2">
+                        <button id="deposit-button"
+                          class="inline-block px-6 py-2.5 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
+                          type="button"
+                          data-mdb-ripple="true"
+                          data-mdb-ripple-color="light"
+                          style="
+                            background: linear-gradient(
+                              to right,
+                              #ee7724,
+                              #d8363a,
+                              #dd3675,
+                              #b44593
+                            );
+                          "
+                        >
+                          Deposit Now
+                        </button>
+                      </div>
+                </div>
+                <div class="bg-white w-full bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">Withdraw Your Money</h3>
+                    <div>
+                        <input id="withdraw-field"
+                          type="number"
+                          class="form-control block w-full px-3 py-3 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                          id="exampleFormControlInput1"
+                          placeholder="Withdraw Amount. Ex: 200"
+                        />
+                    </div>
+                    <div class="text-center pt-1 mt-2">
+                        <button id="withdraw-button"
+                          class="inline-block px-6 py-2.5 text-white font-medium text-xl leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
+                          type="button"
+                          data-mdb-ripple="true"
+                          data-mdb-ripple-color="light"
+                          style="
+                            background: linear-gradient(
+                              to right,
+                              #ee7724,
+                              #d8363a,
+                              #dd3675,
+                              #b44593
+                            );
+                          "
+                        >
+                          Withdraw Now
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+      </section>
+</body>
+</html>
